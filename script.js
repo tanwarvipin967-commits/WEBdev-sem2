@@ -30,3 +30,35 @@
 //     console.log(event)
 //     console.log("Button Clicked")
 // })
+// debugger
+// console.log(a)
+// // console.log(b)
+// var a = 2343
+// let b = 342;
+
+// console.log(a)
+// console.log(b)
+
+// function print(){
+//     console.log("inside fn")
+// }
+// print()
+
+// function first(){
+//     second()
+// }
+// function second(){
+//     third()
+// }
+// function third(){
+//     console.log("Inside third function")
+// }
+// first()
+
+// let total=345
+// function calculate(){
+//     console.log(total)
+//     let total=565
+// }
+
+// calculate()
