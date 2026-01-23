@@ -62,3 +62,25 @@
 // }
 
 // calculate()
+
+// console.log("THis is the code")
+// setTimeout(()=>{console.log("After 5 sec")},5000)
+// console.log("End of code")
+// const timeout=setTimeout(()=>{
+//     console.log("After 2 sec")
+// },200)
+// clearTimeout(timeout)
+// const interval=setInterval(() => {
+//     console.log("Every second")
+// }, 2000);
+
+// setTimeout(()=>{clearInterval(interval)},10000)
+let count = 0
+const interval = setInterval(() => {
+    count++;
+    console.log(count)
+    if (count === 10) {
+        clearInterval(interval)
+    }
+}, 1000)
+
