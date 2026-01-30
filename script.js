@@ -75,12 +75,77 @@
 // }, 2000);
 
 // setTimeout(()=>{clearInterval(interval)},10000)
-let count = 0
-const interval = setInterval(() => {
-    count++;
-    console.log(count)
-    if (count === 10) {
-        clearInterval(interval)
-    }
-}, 1000)
+// const studentName = document.querySelector('#name')
+// const button=document.querySelector('#btn')
+// const list =document.querySelector('#list')
+
+// console.log("Starting homework..");
+
+// setTimeout(()=>{
+//     console.log("Homeworkdone!..");
+//     console.log("Starting Dinner...");
+
+//     setTimeout(()=>{
+//         console.log("Dinner Done...");
+//         console.log("Getting Ready To go Out...");
+
+//         setTimeout(()=>{
+//             console.log("Going to Playground..");
+//         },1000);
+//     },1500);
+// },2000);
+
+// function finishHomework(callback){
+//     console.log("Starting homework...");
+//     setTimeout(()=>{
+//         console.log("Homework done..");
+//         callback();
+//     },2000);
+// }
+
+// function eatDinner(callback){
+//     console.log("Starting dinner..");
+//     setTimeout(()=>{
+//         console.log("Dinner done...");
+//         callback();
+//     },1500);
+// }
+
+// function goToPlayground(){
+//     console.log("Going to playgroung...");
+// }
+
+//  finishHomework(()=>{
+//     eatDinner(()=>{
+//         goToPlayground();
+//     });
+// });
+
+const p =new Promise((res , rej)=>{
+    console.log("Going to do the homework!!");
+
+    setTimeout(()=>{
+        const done=false;
+        if (done){
+            res ("Success")
+        }else{
+            rej("Failed to fetch the data..")
+        }
+    },3000)
+})
+p.then((a)=>{
+    console.log(a)
+}).catch((err)=>{
+    console.log(err)
+})
+
+
+
+
+
+
+
+
+
+
 
